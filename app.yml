@@ -1,0 +1,6 @@
+dependencies:
+  com.fasterxml.jackson.jr:jackson-jr-all: 2.20.1
+
+
+actions:
+  clean: "rm deps/*"
