@@ -1,19 +1,21 @@
 # Simple Java Template
 
 ### Requirements
-- [JPM](https://github.com/codejive/java-jpm)
-  - [Install SDKMAN](https://sdkman.io/install/)
+- [Install SDKMAN](https://sdkman.io/install/)
+- Install Java 25
+  - `sdk install java 25.0.1-amzn`
+  - `sdk use java 25.0.1-amzn`
+- [Install JPM](https://github.com/codejive/java-jpm)
   - `sdk install jbang`
   - `jbang app install jpm@codejive`
-- Java 25
-  - `sdk install java 25.0.1-amzn`
 
 ### Usage
 1. `jpm install`
-2. `./SimpleTableExport.java`
-    - Starts in interactive mode
-3. `./SimpleTableExport.java [outputFile] [tableName] [attribute1] [attribute2] ...`
-    - Runs without interactive mode
+2. `./SimpleTableExport.java` 
+   - `./SimpleTableExport.java [args...]`
+3. Add new dependencies with [JPM](https://github.com/codejive/java-jpm)
+   - `jpm clean` to remove dependencies in the `deps` folder
+   - SimpleJavaTemplate.java contains example code using dependencies
 
 ### References
 - JEP 330: Launch Single-File Source-Code Programs
